@@ -86,6 +86,7 @@ const First = () => {
   });
   return (
     <>
+    
       <div style={{ width: "100%", height: 800, position: 'relative', background: '#0E0C0C' }}>
         <div style={{ left: 119, top: 234, position: 'absolute', justifyContent: 'center', alignItems: 'flex-start', gap: 18, display: 'inline-flex' }}>
 
