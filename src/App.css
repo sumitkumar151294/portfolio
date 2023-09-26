@@ -28,11 +28,25 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* Define the keyframes for the animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
+      transform: translateY(-60px);
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
+
+/* Apply the animation to the element */
+.skills-container {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Add a delay to each subsequent skill */
+.skills-container:nth-child(n+2) {
+  animation-delay: 0.5s;
+}
+
